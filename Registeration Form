@@ -1,0 +1,130 @@
+Registeration Form
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Info Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #004080;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            max-width: 400px;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .gender-options {
+            margin-top: 10px;
+        }
+
+        .gender-options label {
+            margin-right: 20px;
+            font-weight: normal;
+        }
+
+        .submit-button,
+        .back-button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .submit-button:hover,
+        .back-button:hover {
+            background-color: #0066cc;
+        }
+
+        #success-message {
+            display: none;
+            text-align: center;
+        }
+
+        #form-container {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div id="form-container">
+    <h1>Student Information</h1>
+    <form id="studentForm">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+
+        <label for="lname">Surname:</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter your surname" required>
+
+        <label for="college">College:</label>
+        <input type="text" id="college" name="college" placeholder="Enter your college" required>
+
+        <label>Gender:</label>
+        <div class="gender-options">
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</div>
+
+<div id="success-message">
+    <h1>Submission Successful!</h1>
+    <p>Thank you for submitting your information.</p>
+    <button class="back-button" onclick="goBack()">Go Back to Form</button>
+</div>
+
+<script>
+    const form = document.getElementById('studentForm');
+    const formContainer = document.getElementById('form-container');
+    const successMessage = document.getElementById('success-message');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent actual form submission
+
+        // Optionally: Validate form here if needed
+
+        // Hide form and show success message
+        formContainer.style.display = 'none';
+        successMessage.style.display = 'block';
+    });
+
+    function goBack() {
+        // Reset form
+        form.reset();
+
+        // Show form again
+        formContainer.style.display = 'block';
+        successMessage.style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
