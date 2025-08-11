@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhruv Kandalgaonkar - Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #007BFF;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: #0056b3;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #dfefff;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background-color: white;
+      color: #333;
+      padding: 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      color: #0056b3;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      padding: 0.4rem 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #0056b3;
+      color: #dfefff;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Dhruv Kandalgaonkar</h1>
+  <p>Coding Enthusiast | Football Lover | Family & Friends First</p>
+</header>
+
+<div class="container">
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      Hey! I'm Dhruv — a developer who enjoys writing code, building creative things, and solving real-world problems.
+      I love playing football and spending time with my family and friends, which keeps me balanced and motivated.
+    </p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS</li>
+      <li>JavaScript (Basics)</li>
+      <li>Python</li>
+      <li>Web Design</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Interests</h2>
+    <ul>
+      <li>Frontend Development</li>
+      <li>Football</li>
+      <li>Spending time with family and friends</li>
+      <li>Learning new tech</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+    <p>You can reach me at: <a href="mailto:dhruvkandalgaonkar1@gmail.com">dhruvkandalgaonkar1@gmail.com</a></p>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2025 Dhruv Kandalgaonkar. All rights reserved.
+</footer>
+
+</body>
+</html>
